@@ -1,7 +1,4 @@
-// Note: codes in my assignment were all done by myself in help with week one mandatory resources from canvas (geeksforgeeks.org/the-ultimate-beginners-guide-for-dsa/ basic syntax of javascript and other materials within there.) tp work with and understand better what we learn,
-// Note: I did not use any Ai platform (No Chatgpt, Gemini, Cursor, claude, copilot or other type of Ais ) against my advantage just to finish this assignment, thank you.
-
-// so in this ( thematrix.js ) file i parsed matrix with normal string methods which were easy to work with since parsing with regex/regular expression was nearly impossible and hard to use 🤦‍♀️
+// so in this ( thematrix.js ) file i parsed matrix with normal string methods which were easy to work with since parsing with regex/regular expression was nearly impossible and hard to use anywae
 class Spmatrix {
 
     //  created a sparse matrix with rows and columns
@@ -21,7 +18,7 @@ class Spmatrix {
   
       const matrix = new Spmatrix(numrows, numcols);
   
-      // so here i did went  through each remaining lines
+      // so here i did went  through each of remaining lines
       for (let i = 2; i < lines.length; i++) {
         const line = lines[i].trim();
         if (line === '') continue; // i used a simple ( if condition) that if the line is blank then skip it
@@ -31,7 +28,7 @@ class Spmatrix {
         const parts = nobc.split(',');
   
         if (parts.length !== 3) {
-          throw new Error('Input file has wrong format sire: ' + line);
+          throw new Error('input file has wrong format size: ' + line);
         }
   
         const row = parseInt(parts[0].trim());
@@ -39,7 +36,7 @@ class Spmatrix {
         const val = parseInt(parts[2].trim());
   
         if (isNaN(row) || isNaN(col) || isNaN(val)) {
-          throw new Error('lines not enoughh: ' + line);
+          throw new Error('lines are not enoughh: ' + line);
         }
   
         matrix.set(row, col, val);
@@ -123,7 +120,7 @@ class Spmatrix {
       return result;
     }
   
-    // Convert to a text format
+    // converting to a text format
     toString() {
       const lines = [`rows=${this.rows}`, `cols=${this.cols}`];
       for (let [key, val] of this.data) {
@@ -132,6 +129,6 @@ class Spmatrix {
       return lines.join('\n');
     }
   }
-  // so this module.ex...... line line is what i used to share code from this ( thematrix.js ) file with  (index.js) file so the workflow can be much more easier and very open to use. 
+  // so this module.expo... line line is what i used to share code from this ( thematrix.js ) file with  (index.js) file so the workflow can be much more easier and very open to use. 
   module.exports = Spmatrix;
   
