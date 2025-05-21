@@ -17,7 +17,7 @@ function askoperaa() {
   });
 
   return new Promise(resolve => {
-    rl.question('Hi you!, yes you what operation do you want to perform dear? add, subtract or multiply: ', answer => {
+    rl.question(' Hi you!, yes you what operation do you want to perform dear? add, subtract or multiply: ', answer => {
 
         // so i needed this rl.close() funvtion to stop the program to keep waiting forever for more inputs from
       rl.close();
