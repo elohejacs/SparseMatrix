@@ -1,16 +1,16 @@
-// so in this ( thematrix.js ) file i parsed matrix with normal string methods which were easy to work with since parsing with regex/regular expression was nearly impossible and hard to use anywae
+// so in this ( thematrix.js ) file i parsed matrix with normal string methods which were easy to work with since parsing with regex/regular expression was nearly impossible and hard to use anyway
 class Spmatrix {
 
     //  created a sparse matrix with rows and columns
     constructor(numrows, numcols) {
       this.rows = numrows;
       this.cols = numcols;
-      this.data = new Map(); // this is only to store non zeros value
+      this.data = new Map(); // this is only to store non zeros values
     }
   
-    // i used this static format to Read and create a matrix from a file's content
+    // i used this static format to Read and create a matrix from a file's content and slipt them
     static fromFileContent(fileText) {
-      const lines = fileText.trim().split('\n');
+      const lines = fileText.trim().split('\n'); 
   
       // creatd the first line rows and column
       const numrows = parseInt(lines[0].split('=')[1]);
@@ -18,7 +18,7 @@ class Spmatrix {
   
       const matrix = new Spmatrix(numrows, numcols);
   
-      // so here i did went  through each of remaining lines
+      // so here i did went  through each of the remaining lines
       for (let i = 2; i < lines.length; i++) {
         const line = lines[i].trim();
         if (line === '') continue; // i used a simple ( if condition) that if the line is blank then skip it
