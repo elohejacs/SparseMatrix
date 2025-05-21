@@ -1,4 +1,4 @@
-# Sparse matrix project in JavaScript
+# Sparse matrix work in JavaScript
 
 Note: In this assignment i was working on memory management of Sparse matrix in JavaScript using only basic language features — no external libraries or matrix frameworks were used and no Ai was used. so this program reads two sparse matrix files and performs operations  add,  subtract , multiply , and show the results in result_matrix.txt file
 
