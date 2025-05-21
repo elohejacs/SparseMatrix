@@ -42,7 +42,7 @@ function askoperaa() {
     if (operation === 'add' || operation === 'subtract') {
       fileB = '../sample_inputs/easy_sample_03_2.txt'; // 
     } else if (operation === 'multiply') {
-      fileB = '../sample_inputs/easy_sample_03_3.txt'; // 
+      fileB = '../sample_inputs/easy_sample_03_3.txt'; // after declaring that fileB can be replaced i checked the condition if let's say user choose to use multiplication then fileB which is sample input 03-2 will turn into 03-3 to be able to multiply
     } else {
       throw new Error(' Ooh no!, you choose the wrong operation, please choose among add, subtract, or multiply nothing else please!!!.');
     }
@@ -51,7 +51,7 @@ function askoperaa() {
     const matrixA = Spmatrix.fromFileContent(readFile(fileA));
     const matrixB = Spmatrix.fromFileContent(readFile(fileB));
 
-    // The main operation
+    // The main operations add sub multiply...
     let result;
     if (operation === 'add') {
       result = matrixA.add(matrixB);
@@ -64,7 +64,7 @@ function askoperaa() {
     
 
     // So this is thecode part where saving the result matrix to a file is doneee
-    fs.writeFileSync('../../result_matrix.txt', result.toString());
+    fs.writeFileSync('../../result_matrix.txt', result.toString()); // i went back 2 times in folder that's where i choosed to store my results and as you can see the file is create automatically with writefilesyc... function and no need to creat it manually and if the file has some content in it then it will be re-writed not just having duplicated files
 
     console.log('\n Alright congs, operation successful!');
     console.log('And the result were saved to: result_matrix.txt go check it outtttttt');
