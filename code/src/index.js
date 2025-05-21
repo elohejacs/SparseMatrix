@@ -44,7 +44,7 @@ function askoperaa() {
     } else if (operation === 'multiply') {
       fileB = '../sample_inputs/easy_sample_03_3.txt'; // 
     } else {
-      throw new Error('Invalid operation. Please choose add, subtract, or multiply.');
+      throw new Error(' Ooh no!, you choose the wrong operation, please choose among add, subtract, or multiply nothing else please!!!.');
     }
 
     // parsing all matrices 
