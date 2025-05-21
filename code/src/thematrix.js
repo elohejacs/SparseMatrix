@@ -1,7 +1,7 @@
-//  Note: Codes in my assignment were all done by myself inhelp with  week one mandatory resources from canvas (geeksforgeeks.org/the-ultimate-beginners-guide-for-dsa/ basic syntax of javascript and other materials within there.) tp work with and understand better what we learn
-// Note: I did not use any Ai platform (No Chatgpt, Gemini, Cursor, claude, copilot or other type of Ai ) against my advantage just to finish this assignment, thank you.
+// Note: codes in my assignment were all done by myself in help with week one mandatory resources from canvas (geeksforgeeks.org/the-ultimate-beginners-guide-for-dsa/ basic syntax of javascript and other materials within there.) tp work with and understand better what we learn,
+// Note: I did not use any Ai platform (No Chatgpt, Gemini, Cursor, claude, copilot or other type of Ais ) against my advantage just to finish this assignment, thank you.
 
-// so in this thematrix.js file i parsed matrix with normal string methods which were easy to work with since parsing with regex/regular expression was nearly impossible and hard to use 🤦‍♀️
+// so in this ( thematrix.js ) file i parsed matrix with normal string methods which were easy to work with since parsing with regex/regular expression was nearly impossible and hard to use 🤦‍♀️
 class Spmatrix {
 
     //  created a sparse matrix with rows and columns
@@ -11,7 +11,7 @@ class Spmatrix {
       this.data = new Map(); // this is only to store non zeros value
     }
   
-    // static format to Read and create a matrix from a file's content
+    // i used this static format to Read and create a matrix from a file's content
     static fromFileContent(fileText) {
       const lines = fileText.trim().split('\n');
   
@@ -61,7 +61,7 @@ class Spmatrix {
       return this.data.get(key) || 0;
     }
   
-    // addition
+    // addition function
     add(other) {
       if (this.rows !== other.rows || this.cols !== other.cols) {
         throw new Error('addition failed');
@@ -82,7 +82,7 @@ class Spmatrix {
       return result;
     }
   
-    // sub section 
+    // sub function 
     subtract(other) {
 
       const result = new Spmatrix(this.rows, this.cols);
@@ -99,7 +99,7 @@ class Spmatrix {
   
       return result;
     }
-    // multplicaton
+    // multplicaton function
 
     multiply(other) {
       if (this.cols !== other.rows) {
