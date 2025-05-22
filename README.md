@@ -15,5 +15,5 @@ Note: In this assignment i was working on memory management of Sparse matrix in 
 - i tried using clear and user friendly calm messages/ error messages
 
 ---
-Of course i Jacob elohe was the author and let me know what you think - email: elohe.jacs@gmail.com - Phone: +250792560660
+Of course i Jacob elohe wrote everything and let me know what you think, thx - email: elohe.jacs@gmail.com - Phone: +250792560660
 
